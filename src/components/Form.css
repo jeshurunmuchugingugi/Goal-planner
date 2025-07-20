@@ -1,0 +1,28 @@
+.form-container {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

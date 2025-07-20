@@ -1,0 +1,38 @@
+/* File: src/components/GoalCard.css */
+.goal-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 300px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: #e0e0e0;
+    margin-top: 0.5rem;
+  }
+  
+  .progress-bar .fill {
+    height: 100%;
+    border-radius: 3px;
+    background-color: #4caf50;
+  }
+  
+  .auto-save {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
