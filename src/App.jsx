@@ -44,6 +44,7 @@ function App() {
   }
 
   return (
+    
     <div className="dashboard-container">
       <main className="main-content">
         <header className="top-bar">
@@ -51,7 +52,10 @@ function App() {
           <h2>USD {goals.reduce((sum, g) => sum + g.savedAmount, 0).toLocaleString()}</h2>
         </header>
         <Overview goals={goals} />
-        <div className="forms-wrapper">
+      
+      
+      </main>
+      <div className="forms-wrapper">
           <GoalForm onAddGoal={addGoal} />
           <DepositForm goals={goals} onDeposit={updateGoal} />
         </div>
@@ -60,7 +64,6 @@ function App() {
           onUpdateGoal={updateGoal}
           onDeleteGoal={deleteGoal}
         />
-      </main>
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Overview({ goals }) {
     return (
       <div className="overview">
         <h2>Overview</h2>
-        <p>Total Goals: {totalGoals}</p>
+        <p>Total Goals:{totalGoals}</p>
         <p>Total Saved: ${totalSaved}</p>
         <p>Completed Goals: {completedGoals}</p>
       </div>

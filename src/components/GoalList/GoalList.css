@@ -1,6 +1,9 @@
 .goal-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 30px;
   }
   

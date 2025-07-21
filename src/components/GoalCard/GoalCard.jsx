@@ -1,4 +1,3 @@
-// File: src/components/GoalCard.js
 import '../GoalCard/GoalCard.css'
 function GoalCard({ goal, onUpdateGoal, onDeleteGoal }) {
     const { id, name, targetAmount, savedAmount, deadline, category } = goal;
@@ -20,10 +19,10 @@ function GoalCard({ goal, onUpdateGoal, onDeleteGoal }) {
         <div className="progress-bar">
           <div className="fill" style={{ width: `${percent}%` }} />
         </div>
-        {completed && <p className="complete">🎉 Goal Completed!</p>}
-        {warning && <p className="warning">⚠️ Less than 30 days left!</p>}
-        {overdue && <p className="overdue-msg">❌ Overdue</p>}
-        <button onClick={() => onDeleteGoal(id)}>Delete</button>
+        {completed && <p className="complete"> Goal Completed!</p>}
+        {warning && <p className="warning"> Less than 30 days left!</p>}
+        {overdue && <p className="overdue-msg"> Overdue</p>}
+        <button className='delete' onClick={() => onDeleteGoal(id)}>Delete</button>
       </div>
     );
   }
