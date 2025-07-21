@@ -4,10 +4,19 @@
       "id": "3",
       "name": "New Laptop",
       "targetAmount": 1500,
-      "savedAmount": 1500,
+      "savedAmount": 1800,
       "category": "Electronics",
       "deadline": "2024-07-20",
       "createdAt": "2024-03-10"
+    },
+    {
+      "id": "cc5d",
+      "name": "House",
+      "targetAmount": 2300000000,
+      "savedAmount": 343499,
+      "category": "Travel",
+      "deadline": "2029-12-09",
+      "createdAt": "2025-07-21"
     }
   ]
 }
