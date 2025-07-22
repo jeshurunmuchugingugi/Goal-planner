@@ -9,13 +9,13 @@ function App() {
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {
-    fetch("https://goal-planner-virid.vercel.app/goals")
+    fetch("http://localhost:3000/goals")
       .then((res) => res.json())
       .then(setGoals);
   }, []);
 
   function addGoal(newGoal) {
-    fetch("https://goal-planner-virid.vercel.app/goals", {
+    fetch("http://localhost:3000/goals", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newGoal),
@@ -25,7 +25,7 @@ function App() {
   }
 
   function updateGoal(id, updatedFields) {
-    fetch(`https://goal-planner-virid.vercel.app/goals/${id}`, {
+    fetch(`http://localhost:3000/goals/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedFields),
@@ -39,7 +39,7 @@ function App() {
   }
 
   function deleteGoal(id) {
-    fetch(`https://goal-planner-virid.vercel.app/goals/${id}`, { method: "DELETE" })
+    fetch(`http://localhost:3000/goals/${id}`, { method: "DELETE" })
       .then(() => setGoals((prev) => prev.filter((g) => g.id !== id)));
   }
 
